@@ -22,15 +22,17 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-6">Hello World!</h1>
+		<h1 class="title mb-6">About Me</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, a simple starter that you can use to create your website or blog.
-			If you want to know more about how you can customise me, add more posts, and make it your own,
-			click on the GitHub icon link below and it will take you to my repo.
+			Hi, I'm Habib Kazemi, a master's student in Artificial Intelligence at the University of
+			Bologna. My current research interests focus on Large Language Models (LLMs) and their
+			applications in Natural Language Processing and interdisciplinary fields. I am particularly
+			passionate about leveraging LLMs to enrich educational methods, especially language learning.
 		</p>
 		<SocialList />
 	</section>
-	<section class="mt-16">
+	<!-- TODO: Uncomment the following -->
+	<!-- <section class="mt-16">
 		<h2 class="title text-accent mb-6 text-xl"><a href="/posts/">Posts</a></h2>
 		<ul class="space-y-4" role="list">
 			{
@@ -41,8 +43,8 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 				))
 			}
 		</ul>
-	</section>
-	{
+	</section> -->
+	<!-- {
 		latestNotes.length > 0 && (
 			<section class="mt-16">
 				<h2 class="title text-accent mb-6 text-xl">
@@ -57,5 +59,5 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 				</ul>
 			</section>
 		)
-	}
+	} -->
 </PageLayout>

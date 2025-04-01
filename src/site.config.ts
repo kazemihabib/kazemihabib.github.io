@@ -44,10 +44,10 @@ export const menuLinks: { path: string; title: string }[] = [
 	//     path: "/projects/",
 	//     title: "Projects",
 	// },
-	// {
-	//     path: "/CV/",
-	//     title: "CV",
-	// },
+	{
+		path: "/cv.pdf",
+		title: "CV",
+	},
 
 	// {
 	// 	path: "/notes/",

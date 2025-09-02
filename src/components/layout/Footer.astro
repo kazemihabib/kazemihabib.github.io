@@ -9,17 +9,8 @@ const year = new Date().getFullYear();
 >
 	<div class="me-0 text-[0.5rem] text-gray-500 sm:me-4 dark:text-gray-400">
 		&copy; {siteConfig.author}
-		{year}.<span class="inline-block">
-			Powered by <a href="https://astro.build" class="hover:text-global-text hover:underline"
-				>Astro</a
-			> using
-			<a
-				href="https://github.com/chrismwilliams/astro-theme-cactus"
-				class="hover:text-global-text hover:underline"
-			>
-				Cactus Theme
-			</a>
-		</span>
+		{year}.<span class="inline-block">&nbsp;🚀&nbsp;{siteConfig.title}</span
+		>
 	</div>
 	<nav
 		aria-labelledby="footer_links"
@@ -28,7 +19,10 @@ const year = new Date().getFullYear();
 		<p id="footer_links" class="sr-only">More on this site</p>
 		{
 			menuLinks.map((link) => (
-				<a class="hover:text-global-text px-4 py-2 hover:underline sm:py-0" href={link.path}>
+				<a
+					class="hover:text-global-text px-4 py-2 hover:underline sm:py-0"
+					href={link.path}
+				>
 					{link.title}
 				</a>
 			))
